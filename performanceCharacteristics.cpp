@@ -22,23 +22,30 @@ int main(){
 void performanceCharacteristics(){
 
   cout << endl;
-  cout << " Program to calculate PET detector characteristics " << endl;
+  cout << "------------------------------------------------------------   " << endl;
+  cout << "------------------------------------------------------------   " << endl;
+  cout << "      Program to calculate PET detector characteristics        " << endl;
+  cout << "------------------------------------------------------------   " << endl;
+  cout << "   Based on G.B. Saha, Basics of PET Imaging 2010 (Ch 6)       " << endl;
+  cout << "------------------------------------------------------------   " << endl;
+  cout << "       Dr Gary Smith   gsmith23@ph.ed.ac.uk    20/09/17        " << endl;
+  cout << "------------------------------------------------------------   " << endl;
   cout << endl;
   
   int option = 0;
   
-  cout << " What would you like to calculate ? " << endl;
-  cout << " Option (input) "   << endl; 
-  cout << " ------------------------ "   << endl; 
-  cout << " Spacial Resolution (1) " << endl; 
-  cout << " Sensitivity (2) " << endl; 
-  cout << " Noise Equivalent Count Rate (3) " << endl; 
-  cout << " Scatter Fraction (4) " << endl; 
-  cout << " Contrast (5) " << endl; 
-  cout << " All (6) " << endl; 
-  cout << " ------------------------ "   << endl; 
-  cin >> option;
-  
+  cout << " Choose a quantity to calculate " << endl;
+  cout << " ------------------------------ " << endl; 
+  cout << " Spacial Resolution (1)         " << endl; 
+  cout << " Sensitivity (2)                " << endl; 
+  cout << " Noise Equivalent Count Rate (3)" << endl; 
+  cout << " Scatter Fraction (4)           " << endl; 
+  cout << " Contrast (5)                   " << endl; 
+  cout << " All (6)                        " << endl; 
+  cout << " ------------------------------ " << endl; 
+  cout << " Input option: ";    cin >> option;
+  cout << " ------------------------------ " << endl; 
+
   switch(option) {
   case 1: {
     calculateSpatialResolution();
@@ -69,9 +76,10 @@ void performanceCharacteristics(){
     break;
   }
   default:{
-    cout << " Oh no, that is not a valid option. "       << endl;
+    cout << " Invalid option "  << endl;
+    
     break;
   }
   }
-
+  
 }
