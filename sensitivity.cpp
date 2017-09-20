@@ -5,8 +5,10 @@ void calculateSensitivity(){
   cout << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
-  cout << " Calculating Sensitivity (cps/kBq) "  << endl;
+  cout << " Calculating Sensitivity (cps/kBq)    "  << endl;
   cout << " ------------------------------------ "  << endl;
+  cout << "  recommended units are in brackets   "  << endl;
+  cout << "    but use any consistent system     "  << endl;
   cout << endl;
   
   float option = 0;
@@ -19,36 +21,45 @@ void calculateSensitivity(){
     mu = 1.,t = 1.,r = 1., att;
 
   cout << " ------------------------------------ " << endl;
-  cout << " What is the detector Area seen?" << endl;
+  cout << " What is the detector Area seen by    " << endl;
+  cout << " the source (mm^2) ? \t";
   cin  >> A;
-  cout << " Area = " << A << endl;
   
   cout << " ------------------------------------ " << endl;
-  cout  << " What is the source-detector distance ? " << endl;
-  cin   >> r;
-  cout << " source-detector distance = " << r << endl;
+  cout << " What is the source-detector          " << endl;
+  cout << " distance (mm) ? \t";
+  cin  >> r;
   
   cout << " ------------------------------------ " << endl;
-  cout  << " What is the detector's efficiency ? " << endl;
-  cout  << " (consider dead time )" << endl;
-  cin   >> epsilon;
-  cout << " Efficiency = " << epsilon << endl;
+  cout << " What is the detector's efficiency ?  " << endl;
+  cout << " (consider dead time) \t ";
+  cin  >> epsilon;
   
   cout << " ------------------------------------ " << endl;
-  cout  << " What is the detector's atten. coef ? " << endl;
-  cin   >> mu;
-  cout  << " What is the detector's thickness ? " << endl;
-  cin   >> t;
+  cout << " What is the detector's attenuation   " << endl;
+  cout << " coefficient, mu (/cm)? ";
+  cin  >> mu;
+  
+  cout << " ------------------------------------ " << endl;
+  cout << " What is the detector's thickness     " << endl;
+  cout << " (cm) ? \t";
+  cin  >> t;
   
   att = exp(-mu*t);
   
+  cout << " ------------------------------------ " << endl;
   cout << " exp(-mu * t) = " << att << endl;
   
-  float S = A * epsilon * epsilon * att / ( 4 * 3.142 * r * r ) * 1000;
+  float S = A * epsilon * epsilon * att;
+  S       = S / ( 4 * 3.142 * r * r ) ;
+  
+  // convert to cps / kBq
+  S       = S * 1000;
 
+  cout << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
-  cout << " The sensitivity is " << S << " cps / kBq " << endl;
+  cout << " Sensitivity is " << S << " cps / kBq " << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
   

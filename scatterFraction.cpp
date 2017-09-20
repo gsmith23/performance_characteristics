@@ -11,11 +11,15 @@ void calculateScatterFraction(){
   
   float Cs = 0 ,Cp = 0 ,SF = 0;
   
-  cout << " ------------------------------------ "  << endl;
-  cout << " Input Values" << endl; 
+  cout                                             << endl;
+  cout << " Input the following in cps           " << endl; 
+  cout                                             << endl;
+
+  cout << " ------------------------------------ " << endl;
   cout << " Scattered Count Rate? \t";
   cin  >> Cs; 
 
+  cout << " ------------------------------------ " << endl;
   cout << " Prompt Count Rate? \t ";
   cin  >> Cp; 
   

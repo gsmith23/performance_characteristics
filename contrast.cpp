@@ -9,12 +9,16 @@ void calculateContrast(){
   cout << " ------------------------------------ "  << endl;
   
   float A = 0 ,B = 0, C = 0;
+
+  cout                                             << endl;
+  cout << " Input the following                  " << endl; 
+  cout                                             << endl;
   
   cout << " ------------------------------------ "  << endl;
-  cout << " What is the:" << endl;
   cout << " Normal Count Density ? \t  " ;
   cin  >> A; 
   
+  cout << " ------------------------------------ "  << endl;
   cout << " Abnormal Count Density ? \t  ";
   cin  >> B; 
 
