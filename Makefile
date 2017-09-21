@@ -1,2 +1,2 @@
-all: performanceCharacteristics.cpp sensitivity.cpp nerc.cpp spatialResolution.cpp contrast.cpp scatterFraction.cpp
-	g++ -o 	performanceCharacteristics performanceCharacteristics.cpp sensitivity.cpp nerc.cpp spatialResolution.cpp contrast.cpp scatterFraction.cpp -I.
+all: performanceCharacteristics.cpp sensitivity.cpp necr.cpp spatialResolution.cpp contrast.cpp scatterFraction.cpp
+	g++ -o 	performanceCharacteristics performanceCharacteristics.cpp sensitivity.cpp necr.cpp spatialResolution.cpp contrast.cpp scatterFraction.cpp -I.

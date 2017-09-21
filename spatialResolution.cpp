@@ -5,7 +5,7 @@ float calculateSpatialResolution(){
   cout << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
-  cout << " Calculating Spacial Resolution       "      << endl;  
+  cout << " Calculating Spatial Resolution       "  << endl;  
   cout << " ------------------------------------ "  << endl;
   cout << endl;
   
@@ -67,7 +67,7 @@ float calculateSpatialResolution(){
   
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
-  cout << " Spacial resolution (on scanner axis) "  << endl;
+  cout << " Spatial resolution (on scanner axis) "  << endl;
   cout << " Rt = " << Rt << " mm "                  << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;

@@ -3,7 +3,7 @@
 
 #include "spatialResolution.h"
 #include "sensitivity.h"
-#include "nerc.h"
+#include "necr.h"
 #include "scatterFraction.h"    
 #include "contrast.h"
 
@@ -56,7 +56,7 @@ void performanceCharacteristics(){
     break;
   }
   case 3:{
-    calculateNERC();
+    calculateNECR();
     break;
   }
   case 4:{
@@ -71,20 +71,20 @@ void performanceCharacteristics(){
   
     float spRe = calculateSpatialResolution();
     float sens = calculateSensitivity(); 
-    float nerc = calculateNERC();  
+    float necr = calculateNECR();  
     float scFr = calculateScatterFraction();
     float cont = calculateContrast();
     
-    cout <<"----------------------------------------------------------"<< endl;
-    cout <<"                    Results Summary                       "<< endl;
-    cout <<"----------------------------------------------------------"<< endl;
-    cout <<"   Spacial Resolution          " << spRe << endl;
-    cout <<"   Sensitivity                 " << sens << endl; 
-    cout <<"   Noise Equivalent Count Rate " << nerc << endl;
-    cout <<"   Scatter Fraction            " << scFr << endl;
-    cout <<"   Contrast                    " << cont << endl;
-    cout <<"----------------------------------------------------------"<< endl;
-    cout <<"----------------------------------------------------------"<< endl;
+    cout <<"--------------------------------------------------------"<< endl;
+    cout <<"                   Results Summary                      "<< endl;
+    cout <<"--------------------------------------------------------"<< endl;
+    cout <<"  Spacial Resolution          " << spRe << " mm         "<< endl;
+    cout <<"  Sensitivity                 " << sens << " cps / kBq  "<< endl;
+    cout <<"  Noise Equivalent Count Rate " << necr << " cps        "<< endl;
+    cout <<"  Scatter Fraction            " << scFr << "            "<< endl;
+    cout <<"  Contrast                    " << cont << "            "<< endl;
+    cout <<"--------------------------------------------------------"<< endl;
+    cout <<"--------------------------------------------------------"<< endl;
     
     
     break;
