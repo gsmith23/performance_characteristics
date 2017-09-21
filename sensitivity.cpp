@@ -1,6 +1,6 @@
 #include "sensitivity.h"
 
-void calculateSensitivity(){
+float calculateSensitivity(){
   
   cout << endl;
   cout << " ------------------------------------ "  << endl;
@@ -62,5 +62,6 @@ void calculateSensitivity(){
   cout << " Sensitivity is " << S << " cps / kBq " << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
-  
+
+  return S;  
 }

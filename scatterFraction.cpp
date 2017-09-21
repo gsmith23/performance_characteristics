@@ -1,6 +1,6 @@
 #include "scatterFraction.h"
 
-void calculateScatterFraction(){
+float calculateScatterFraction(){
 
   cout << endl;
   cout << " ------------------------------------ "  << endl;
@@ -31,4 +31,5 @@ void calculateScatterFraction(){
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
 
+  return SF;
 }	       

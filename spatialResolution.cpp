@@ -1,6 +1,6 @@
 #include "spatialResolution.h"
 
-void calculateSpatialResolution(){
+float calculateSpatialResolution(){
   
   cout << endl;
   cout << " ------------------------------------ "  << endl;
@@ -71,4 +71,6 @@ void calculateSpatialResolution(){
   cout << " Rt = " << Rt << " mm "                  << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
+
+  return Rt;
 }

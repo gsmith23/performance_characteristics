@@ -1,6 +1,6 @@
 #include "contrast.h"
 
-void calculateContrast(){
+float calculateContrast(){
 
   cout << endl;
   cout << " ------------------------------------ "  << endl;
@@ -29,5 +29,6 @@ void calculateContrast(){
   cout << " The Contrast is "  << C                 << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
-  
+
+  return C;
 }	       

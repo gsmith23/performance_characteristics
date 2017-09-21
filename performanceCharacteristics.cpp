@@ -22,14 +22,14 @@ int main(){
 void performanceCharacteristics(){
 
   cout << endl;
-  cout << "------------------------------------------------------------   " << endl;
-  cout << "------------------------------------------------------------   " << endl;
-  cout << "      Program to calculate PET detector characteristics        " << endl;
-  cout << "------------------------------------------------------------   " << endl;
-  cout << "   Based on G.B. Saha, Basics of PET Imaging 2010 (Ch 6)       " << endl;
-  cout << "------------------------------------------------------------   " << endl;
-  cout << "       Dr Gary Smith   gsmith23@ph.ed.ac.uk    20/09/17        " << endl;
-  cout << "------------------------------------------------------------   " << endl;
+  cout <<"----------------------------------------------------------"<< endl;
+  cout <<"----------------------------------------------------------"<< endl;
+  cout <<"    Program to calculate PET detector characteristics     "<< endl;
+  cout <<"----------------------------------------------------------"<< endl;
+  cout <<"   Based on G.B. Saha, Basics of PET Imaging 2010 (Ch 6)  "<< endl;
+  cout <<"----------------------------------------------------------"<< endl;
+  cout <<"    Dr Gary Smith   gsmith23@ph.ed.ac.uk     20/09/17     "<< endl;
+  cout <<"----------------------------------------------------------"<< endl;
   cout << endl;
   
   int option = 0;
@@ -68,11 +68,25 @@ void performanceCharacteristics(){
     break;
   }
   case 6:{
-    calculateSpatialResolution();
-    calculateSensitivity(); 
-    calculateNERC();  
-    calculateScatterFraction();
-    calculateContrast();
+  
+    float spRe = calculateSpatialResolution();
+    float sens = calculateSensitivity(); 
+    float nerc = calculateNERC();  
+    float scFr = calculateScatterFraction();
+    float cont = calculateContrast();
+    
+    cout <<"----------------------------------------------------------"<< endl;
+    cout <<"                    Results Summary                       "<< endl;
+    cout <<"----------------------------------------------------------"<< endl;
+    cout <<"   Spacial Resolution          " << spRe << endl;
+    cout <<"   Sensitivity                 " << sens << endl; 
+    cout <<"   Noise Equivalent Count Rate " << nerc << endl;
+    cout <<"   Scatter Fraction            " << scFr << endl;
+    cout <<"   Contrast                    " << cont << endl;
+    cout <<"----------------------------------------------------------"<< endl;
+    cout <<"----------------------------------------------------------"<< endl;
+    
+    
     break;
   }
   default:{

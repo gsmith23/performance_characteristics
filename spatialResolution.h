@@ -3,4 +3,4 @@
 
 using namespace std;
 
-void calculateSpatialResolution();
+float calculateSpatialResolution();

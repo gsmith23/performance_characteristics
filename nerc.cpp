@@ -1,7 +1,7 @@
 #include "nerc.h"
 
-void calculateNERC(){
-  
+float calculateNERC(){
+ 
   cout << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
@@ -34,5 +34,6 @@ void calculateNERC(){
   cout << " The NERC is " << NERC << " cps "        << endl;
   cout << " ------------------------------------ "  << endl;
   cout << " ------------------------------------ "  << endl;
-  
+
+  return NERC;
 }	       

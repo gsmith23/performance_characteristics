@@ -2,4 +2,4 @@
 
 using namespace std;
 
-void calculateContrast();
+float calculateContrast();
