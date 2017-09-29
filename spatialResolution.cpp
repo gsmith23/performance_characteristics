@@ -9,7 +9,7 @@ float calculateSpatialResolution(){
   cout << " ------------------------------------ "  << endl;
   cout << endl;
   
-  float Kr = 1.5, Ri = 1., Rp = 2.2, Ra = 1., Rl = 0.;
+  float Kr = 1.5, Ri = 1., Rp = 0.2, Ra = 1., Rl = 0.;
   
   float d = 1.0;
   float D = 850.;
