@@ -45,7 +45,7 @@ float calculateSensitivity(){
   cout << " (cm) ? \t";
   cin  >> t;
   
-  att = exp(-mu*t);
+  att = 1-exp(-mu*t);
   
   cout << " ------------------------------------ " << endl;
   cout << " exp(-mu * t) = " << att << endl;
