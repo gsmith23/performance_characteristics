@@ -1,6 +1,7 @@
 ----------------------------------------------------------
 
     Program to calculate PET detector characteristics     
+      Written in C but intended to be ported to C++
 
 ----------------------------------------------------------
 
@@ -8,7 +9,7 @@
 
 ----------------------------------------------------------
 
-    Dr Gary Smith   gsmith23@ph.ed.ac.uk     20/09/17     
+    Dr Gary Smith   gary.smith@.ed.ac.uk     20/09/17     
 
 ----------------------------------------------------------
 
